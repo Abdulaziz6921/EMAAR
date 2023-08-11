@@ -106,9 +106,9 @@
                 </div>
             </div>
 
-            <button onclick="showPopup()" data-aos="fade-up-left" data-aos-duration="1600"
-                class="w-fit h-auto bg-primary text-white uppercase lg:px-[60px] lg:py-[10px] px-[35px] py-[5px] text-[13px]">see
-                more</button>
+            <a href="#Modal1"><button onclick="showPopup()" data-aos="fade-up-left" data-aos-duration="1400"
+                    class="w-fit h-auto bg-primary text-white uppercase lg:px-[60px] lg:py-[10px] px-[35px] py-[5px] text-[13px]">see
+                    more</button></a>
         </div>
     </section>
 
@@ -618,7 +618,7 @@
 
     <!-- CTA Pop-up -->
     <div id="Modal1"
-        class="w-full h-full bg-[url('./Images/backdrop1.png')] bg-no-repeat bg-center bg-cover fixed left-0 top-0 z-[101] flex justify-center items-center -translate-x-full transition-transform duration-[3s]">
+        class="w-full h-full bg-[url('./Images/backdrop1.png')] bg-no-repeat bg-center bg-cover absolute left-0 top-[120%] z-[101] flex justify-center items-center -translate-x-full transition-transform duration-[3s]">
         <div
             class="bg-[url('./Images/bg.png')] bg-no-repeat bg-center bg-cover md:w-4/5 md:h-2/3 h-5/6 w-2/3 flex flex-col md:flex-row relative">
             <div
@@ -672,7 +672,7 @@
 
     <!-- 30s Pop-up  -->
     <div id="Modal2"
-        class="w-full h-full bg-white fixed top-0 z-[101] justify-center items-center flex left-0 -translate-x-full transition-transform duration-[3s]">
+        class="w-full h-full bg-white absolute left-0 top-0 z-[101] justify-center items-center flex -translate-y-full transition-transform duration-[3s]">
         <div
             class="md:bg-[url('./Images/bg.png')] bg-no-repeat bg-center bg-cover lg:w-4/5 lg:h-2/3 h-5/6 w-[90%] flex flex-col md:flex-row relative z-[103]">
             <div
@@ -730,7 +730,6 @@
                     class="hidden md:inline">CLOSE</span>
                 <span class="md:ml-3">X</span></button>
         </div>
-
 
         <img src="./Images/Rectangle 112.png" alt="bg" class="absolute right-0 bottom-[-40px] z-[102] lg:w-auto hidden">
 
