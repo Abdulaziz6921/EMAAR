@@ -9,8 +9,12 @@ btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.parentElement.parentElement.classList.toggle("-translate-x-full");
 
-    if (btn.parentElement.parentElement.classList.contains("modal")) {
+    if (btn.parentElement.parentElement.classList.contains("modal3")) {
       document.body.classList.toggle("overflow-y-hidden");
+    }
+    if (btn.parentElement.parentElement.classList.contains("modal2")) {
+      btn.parentElement.parentElement.classList.toggle("hidden");
+      btn.parentElement.parentElement.classList.toggle("flex");
     }
   });
 });
@@ -20,7 +24,8 @@ let showPopup = () => {
 };
 
 setTimeout(() => {
-  popUp2.classList.toggle("-translate-x-full");
+  popUp2.classList.toggle("hidden");
+  popUp2.classList.toggle("flex");
 }, 5000);
 
 let openProject = () => {
