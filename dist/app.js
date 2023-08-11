@@ -21,8 +21,7 @@ let showPopup = () => {
 
 setTimeout(() => {
   popUp2.classList.toggle("-translate-x-full");
-  // popUp2.parentElement.style = "overflow:hidden";
-}, 1000);
+}, 5000);
 
 let openProject = () => {
   window.scrollTo(0, 0);
