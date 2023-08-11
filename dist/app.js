@@ -26,7 +26,7 @@ let showPopup = () => {
 setTimeout(() => {
   popUp2.classList.toggle("hidden");
   popUp2.classList.toggle("flex");
-}, 5000);
+}, 30000);
 
 let openProject = () => {
   window.scrollTo(0, 0);
