@@ -1,9 +1,9 @@
 let section_counter = document.querySelector("#payment_plans"),
   counters = document.querySelectorAll(".counter-item .counter"),
   btns = document.querySelectorAll(".close-btn"),
-  popUp1 = document.querySelector("#Modal1"),
-  popUp2 = document.querySelector("#Modal2"),
-  popUp3 = document.querySelector("#Modal3");
+  popUp1 = document.querySelector(".modal1"),
+  popUp2 = document.querySelector(".modal2"),
+  popUp3 = document.querySelector(".modal3");
 
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
