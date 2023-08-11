@@ -8,29 +8,28 @@ let section_counter = document.querySelector("#payment_plans"),
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.parentElement.parentElement.classList.toggle("-translate-x-full");
-    btn.parentElement.parentElement.parentElement.classList.toggle(
-      "overflow-y-scroll"
-    );
-    console.log(btn.parentElement.parentElement.parentElement);
+
+    if (btn.parentElement.parentElement.classList.contains("modal")) {
+      document.body.classList.toggle("overflow-y-hidden");
+    }
   });
 });
 
 let showPopup = () => {
   popUp1.classList.toggle("-translate-x-full");
-  popUp1.parentElement.style = "overflow:hidden";
-};
-
-let openProject = () => {
-  popUp3.classList.toggle("-translate-x-full");
-  popUp3.parentElement.style = " overflow: hidden;";
-  popUp3.style = "overflow:auto";
 };
 
 setTimeout(() => {
+  popUp2.classList.toggle("-translate-x-full");
+  // popUp2.parentElement.style = "overflow:hidden";
+}, 1000);
+
+let openProject = () => {
   window.scrollTo(0, 0);
-  popUp2.classList.toggle("-translate-y-full");
-  popUp2.parentElement.classList.add("overflow-hidden");
-}, 2000);
+  popUp3.classList.toggle("-translate-x-full");
+  document.body.classList.toggle("overflow-y-hidden");
+  popUp3.style = "overflow:auto";
+};
 
 let CounterObserver = new IntersectionObserver(
   (entries, observer) => {

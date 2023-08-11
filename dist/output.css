@@ -702,6 +702,10 @@ video {
   top: 120%;
 }
 
+.top-\[107\%\] {
+  top: 107%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1170,6 +1174,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .overflow-y-scroll {
